@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap task</title>
+    <!-- link to css file for MediaQueries for mobile version -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- CDN link for Bootstraped Styling -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    
+  </head>
+  <body>
+    <!-- Header Section start -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand d-lg-none" href="#">Company Name</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary">Contact Us</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-primary" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Header  end -->
+
+    <!-- Home Section start -->
+    <section class="home-carasoul">
+      <div class="container-fluid">
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button"data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button"data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://wallpapercave.com/wp/wp3179980.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>The Mother</h5>
+                <p>
+                  How A Mother and her Children
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://images.unsplash.com/photo-1560328055-e938bb2ed50a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>The Father</h5>
+                <p>
+                  A child sits on the Fathers Shoulders to see ahed far away in the world.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://images.unsplash.com/photo-1565963925128-eebd45213b1f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=639&q=80" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>The Sister</h5>
+                <p>
+                  When There is no Mother and Father, there is sister.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Home Section end -->
+
+    <!-- Cards Section start -->
+    <section class="cards my-4">
+        <div class="container-fluid">
+            <div class="d-flex flex-wrap justify-content-between">
+                <div class="card" style="width: 32%;">
+                    <div class="card-header">
+                        The Ultimate God : Mother
+                      </div>
+                    <img src="https://i.pinimg.com/564x/4e/e5/46/4ee5464075035f75f4eff9eb95059b26.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Mother</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">The Mother and her Devotion</h6>
+                      <p class="card-text">A Greeting for Mother From her Child to re-present the Thankfullness for the life given by mother.</p>
+                      <a href="https://shenarrates.in/mother-child-relationship/" class="btn btn-primary">Mother-Child</a>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Mohters Life</li>
+                      <li class="list-group-item">The Mothers Child</li>
+                    </ul>
+                    <div class="card-body">
+                      <a href="#" class="card-link">Card link</a>
+                      <a href="#" class="card-link">Another link</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Last Updated Today
+                    </div>
+                </div>
+                <div class="card" style="width: 32%;">
+                    <div class="card-header">
+                        The Ultimate world : Father
+                      </div>
+                    <img src="https://i.pinimg.com/564x/83/94/e1/8394e109fe600aec092917759f69c122.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">The Father</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">The Father and his Sacrifice</h6>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">An item</li>
+                      <li class="list-group-item">A second item</li>
+                    </ul>
+                    <div class="card-body">
+                      <a href="#" class="card-link">His Life</a>
+                      <a href="#" class="card-link">His Devotion to Society</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Last Updated Today
+                    </div>
+                </div>
+                <div class="card" style="width: 32%;">
+                    <div class="card-header">
+                        The Only Life : Sister
+                      </div>
+                    <img src="https://i.pinimg.com/564x/83/94/e1/8394e109fe600aec092917759f69c122.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">The Sister</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">The Sister and her Love</h6>
+                      <p class="card-text">How a sister takes care of you, she is The Mother and She is the Father.</p>
+                      <a href="#" class="btn btn-primary">Sister's Blog</a>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Her life</li>
+                      <li class="list-group-item">Her devotion to society</li>
+                    </ul>
+                    <div class="card-body">
+                      <a href="#" class="card-link">Card link</a>
+                      <a href="#" class="card-link">Another link</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Last Updated Today
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Cards Section end -->
+
+    <!-- Accordian Section Start -->
+    <section class="accordian">
+        <div class="container-fluid">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        The Mother
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>This is the Mother's Airticle for the child</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      The Father
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      The Sister
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+    <!-- Accordian Section end -->
+    <br>
+    <br>
+
+    <!-- Table Section Start -->
+    <section class="table">
+        <div class="container-fluid">
+            <table class="table">
+                <thead>                    
+                  <tr>
+                    <th><input type="checkbox"></th>
+                    <th scope="col"><b>Name</b></th>
+                    <th scope="col"><b>Last Name</b></th>
+                    <th scope="col"><b>E-Mail</b></th>
+                    <th scope="col"><b>Links</b></th>
+                    
+                  </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                  <tr>
+                    <th scope="row"><input type="checkbox"></th>
+                    <td>Umesh</td>
+                    <td>Golani</td>
+                    <td>ssutg97@gmail.com</td>
+                    <td>
+                        <a href="#">Publish</a>
+                <a href="#">Edit</a>
+                <a href="#">Delete</a>
+                        </td>
+                    
+                    
+                  </tr>
+                  <tr>
+                    <th scope="row"><input type="checkbox"></th>
+                    <td>Sister</td>
+                    <td>Golani</td>
+                    <td>sister@gmail.com</td>
+                    <td>
+                        <a href="#">Publish</a>
+                <a href="#">Edit</a>
+                <a href="#">Delete</a>
+                        </td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><input type="checkbox"></th>
+                    <td>Sister</td>
+                    <td>Golani</td>
+                    <td>sister@gmail.com</td>
+                    <td>
+                        <a href="#">Publish</a>
+                <a href="#">Edit</a>
+                <a href="#">Delete</a>
+                        </td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <!-- Table Section end -->
+
+    <!-- Form Section start -->
+    <section class="form mt-4">
+        <div class="container-fluid">
+            <form>
+                <fieldset>
+                    <legend>Signup Form</legend>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <input type="text" aria-label="First name" class="form-control" placeholder="First Name">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <input type="text" aria-label="Last name" class="form-control" placeholder="Last Name">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" placeholder="Password">
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" placeholder="Confirm Password">
+                        </div>
+                    </div>                  
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    <!-- Form Section end -->
+
+
+    <!-- Bootstrap JS CDN link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
